@@ -1,38 +1,136 @@
 .App {
+  max-width: 1440px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.globalnavigation{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 15px 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidefod{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.socials{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* ---------- form styling----------- */
+form {
+  margin: auto;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 1em 1em 2em;
+  background-color: var(--white);
+  max-width: 380px;
+  animation: fadeIn 0.5s;
+  }
+  form button {
+  padding: 12px 15px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 350px;
+  }
+  button {
+  font-weight: 300;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  color: var(--text-color-light);
+  background-color: var(--green);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  display: block;
+  margin: 1em auto 0;
+  }
+  button.btn-outline {
+  background-color: var(--light-green);
+  color: var(--green);
+  border: solid 2px var(--green);
+  }
+  .btn-sign-out {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  font-size: 0.7em;
+  padding: 2.032em 1em;
+  }
+  input {
+  margin: 1em auto;
+  width: 100%;
+  max-width: 350px;
+  padding: 1em;
+  box-sizing: border-box;
+  display: block;
+  background: var(--white);
+  border: solid 1px gray;
+  }
+  /* ------- Fejl i formular --------- */
+  .tekst-fejl {
+  color: red;
+  }
+  .tekst-fejl:first-letter {
+  text-transform: uppercase;
+  }
+  /* Info-kort */
+  .kortraekke {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+  .kort {
+  position: relative;
+  width: 240px;
+  margin: 10px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+  .adminkort {
+  cursor: pointer;
+  }
+  .kort img {
+  max-width: 100%;
+  }
+  .kort .tekst {
+  text-align: center;
+  padding: 0 10px 50px;
+  }
+  .kort .tekst p:nth-of-type(1) {
+  min-height: 65px;
+  }
+  .kort h3 {
+  text-align: center;
+  margin-bottom: 5px;
+  }
+  .laesmereknap {
+  position: absolute;
+  background: #805719;
+  border-radius: 5px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  padding: 10px;
+  width: 42%;
+  bottom: 10px;
+  left: 10px;
+  border: none;
   }
-  to {
-    transform: rotate(360deg);
+  .bestilknap {
+  position: absolute;
+  background: #40505f;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  width: 42%;
+  bottom: 10px;
+  right: 10px;
+  border: none;
   }
-}
+  /* */
